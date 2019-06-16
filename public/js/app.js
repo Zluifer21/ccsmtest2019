@@ -67,8 +67,9 @@ window.onload = function(){
 
 $(document).ready(function() {
     $("#nombres").prop("disabled", true);
-    $("#destino").prop("disabled", true);
-    $("#motivo").prop("disabled", true);
+    $("#solicitudDESTINO").prop("disabled", true);
+    $("#solicitudMOTIVO").prop("disabled", true);
+    $("#cantidad").prop("disabled", true);
     $( ".datepicker" ).datepicker(
         {
             dateFormat: 'yy-mm-dd'
@@ -122,8 +123,9 @@ $("#buscarColaborador").click(function(){
                 $("#nombres").val(colaborador.personaRAZONSOCIAL);
                 $("#ColaboradorID").val(colaborador.colaboradorID);
                 $("#nombres").prop("disabled", false);
-                $("#destino").prop("disabled", false);
-                $("#motivo").prop("disabled", false);
+                $("#solicitudDESTINO").prop("disabled", false);
+                $("#solicitudMOTIVO").prop("disabled", false);
+                $("#cantidad").prop("disabled", false);
             }
             else{
                 alert("No se encontró el documento  :"+Identificacion);
