@@ -103,8 +103,8 @@ $("#agregarElemento").click(function(){
     {
         i++;
         activos.push($("#activos").val()); 
-        //$("#tabla_elementos > tbody").append("<tr id='"+i+"'><td>"+elemento[0]+"<input type='hidden' value='"+activo+"' name='solicitudACTIVOS["+i+"][activoID]'> </td><td>"+elemento[1]+" </td><td>"+cantidad+" <input type='hidden' value='"+cantidad+"' name='solicitudACTIVOS["+i+"][cantidad]'> </td><td>"+descripcion+" <input type='hidden' value='"+descripcion+"' name='solicitudACTIVOS["+i+"][descripcion]'> </td><td><a class='btn btn-danger' onclick='eliminar_elemento("+i+","+activo+")'><i class='fa fa-trash'></i></a> </td></tr>");
-        $("#tabla_elementos > tbody").append("<tr id='"+i+"'><td>"+elemento[0]+"<input type='hidden' value='"+activo+"' name='solicitudACTIVOS["+i+"]'> </td><td>"+elemento[1]+" </td><td>"+cantidad+" </td><td>"+descripcion+" </td><td><a class='btn btn-danger' onclick='eliminar_elemento("+i+","+activo+")'><i class='fa fa-trash'></i></a> </td></tr>");
+        $("#tabla_elementos > tbody").append("<tr id='"+i+"'><td>"+elemento[0]+"<input type='hidden' value='"+activo+"' name='solicitudACTIVOS["+i+"][activoID]'> </td><td>"+elemento[1]+" </td><td>"+cantidad+" <input type='hidden' value='"+cantidad+"' name='solicitudACTIVOS["+i+"][cantidad]'> </td><td>"+descripcion+" <input type='hidden' value='"+descripcion+"' name='solicitudACTIVOS["+i+"][descripcion]'> </td><td><a class='btn btn-danger' onclick='eliminar_elemento("+i+","+activo+")'><i class='fa fa-trash'></i></a> </td></tr>");
+        //$("#tabla_elementos > tbody").append("<tr id='"+i+"'><td>"+elemento[0]+"<input type='hidden' value='"+activo+"' name='solicitudACTIVOS["+i+"]'> </td><td>"+elemento[1]+" </td><td>"+cantidad+" </td><td>"+descripcion+" </td><td><a class='btn btn-danger' onclick='eliminar_elemento("+i+","+activo+")'><i class='fa fa-trash'></i></a> </td></tr>");
 
     }
     
